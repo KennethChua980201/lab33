@@ -104,5 +104,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }}
          textViewPremium.setText(String.format("RM %.2f",premium));
     }
+
+    public void reset(View view){
+        spinnerAge.setSelection(-1);
+        radioButtonMale.setChecked(false);
+        checkBoxSmoker.setChecked(false);
+        textViewPremium.setText(getString(R.string.premium));
+    }
 }
 
